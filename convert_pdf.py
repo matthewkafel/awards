@@ -9,8 +9,7 @@ import sys
 import os
 from pathlib import Path
 import re
-from pdfminer.high_level import extract_text, extract_pages
-from pdfminer.layout import LAParams, LTTextContainer, LTChar, LTTextLineHorizontal
+from pdfminer.high_level import extract_text
 
 
 def clean_text(text):
