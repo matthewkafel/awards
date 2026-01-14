@@ -277,14 +277,14 @@ Based on VBMS Awards 40.1 User Guide analysis:
 #### For VBMS Awards to Integrate with ECM-L:
 
 1. **Kafka Consumer**
-   ```
+   ```yaml
    Subscribe to:
    - LetterInstanceDraftCompleteEvent
    - LetterInstanceFinalizedEvent
    ```
 
 2. **Awards API Enhancements**
-   ```
+   ```http
    New Endpoints:
    - GET /awards/{awardId}/data-for-letter
    - GET /awards/{awardId}/participants
@@ -293,14 +293,14 @@ Based on VBMS Awards 40.1 User Guide analysis:
    ```
 
 3. **Letter Manager MFE Embedding**
-   ```
+   ```text
    Embed in:
    - Current and Proposed Award page
    - Record Decisions page
    ```
 
 4. **Data Transformation Logic**
-   ```
+   ```text
    Awards must transform:
    - Rating decisions → Letter data objects
    - Financial decisions → Letter data objects
